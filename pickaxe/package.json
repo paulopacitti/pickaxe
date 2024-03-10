@@ -1,5 +1,5 @@
 {
-  "name": "minecraft-factory",
+  "name": "pickaxe",
   "main": "index.ts",
   "devDependencies": {
     "@types/node": "^18"

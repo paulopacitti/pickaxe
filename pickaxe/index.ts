@@ -4,7 +4,7 @@ import * as gcp from "@pulumi/gcp";
 // Config
 const gcpConfig = new pulumi.Config("gcp");
 const zone = gcpConfig.require("zone");
-const projectConfig = new pulumi.Config("minecraft-factory");
+const projectConfig = new pulumi.Config("pickaxe");
 const port = projectConfig.require("port");
 const cpu = projectConfig.require("cpu");
 

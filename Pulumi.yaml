@@ -1,3 +1,0 @@
-name: minecraft-factory
-runtime: nodejs
-description: Deployable Minecraft server with Pulumi

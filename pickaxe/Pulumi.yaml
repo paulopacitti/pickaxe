@@ -1,0 +1,20 @@
+name: pickaxe
+runtime: nodejs
+description: Deployable Minecraft server with Pulumi
+template:
+  config:
+    gcp:project:
+      description: "The GCP project to deploy to"
+      default: "pickaxe"
+    gcp:zone:
+      description: "The GCP zone to deploy to"
+      default: "us-central1-a"
+    gcp:region:
+      description: "The GCP region to deploy to"
+      default: "us-central1"
+    pickaxe:port:
+      description: "The port to run the Minecraft server on"
+      default: 25565
+    pickaxe:cpu:
+      description: "The number of CPU cores to allocate to the server"
+      default: 1
