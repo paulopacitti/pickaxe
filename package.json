@@ -1,0 +1,11 @@
+{
+  "name": "minecraft-factory",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^18"
+  },
+  "dependencies": {
+    "@pulumi/gcp": "^7.0.0",
+    "@pulumi/pulumi": "^3.0.0"
+  }
+}
