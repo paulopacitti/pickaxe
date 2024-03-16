@@ -7,6 +7,15 @@ This is the infrastructure-as-code (IaC) that I use to create a **on-demand, sma
 
 It uses [Pulumi](https://www.pulumi.com/) as the IaC framework to deploy de server infrastructure on Google Cloud. Inspired by [Futurice's Terraform recipe](https://futurice.com/blog/friends-and-family-minecraft-server-terraform-recipe).
 
+## Usage
+
+1. Make sure you have Pulumi installed and configured.
+2. Create an empty directory where you want to place the server infrastrcuture.
+3. In this directory, run:
+```bash
+pulumi new https://github.com/paulopacitti/pickaxe
+```
+
 ## Architecture
 
 ![infrastructure diagram](docs/architecture.png)
@@ -18,13 +27,3 @@ It uses [Pulumi](https://www.pulumi.com/) as the IaC framework to deploy de serv
 - **Instance**: represents a [VM instance](https://www.pulumi.com/registry/packages/gcp/api-docs/compute/instance/). It will attach to the disk resource to run the Minecraft server, connect to the VPC and use the Address resource as its external IP to be accessed through the internet.
 
 The external IP address resource can be later registered in a domain to be easily accessed by the server players.
-
-## Usage
-
-1. Make sure you have Pulumi installed and configured.
-2. Create an empty directory where you want to place the server infrastrcuture.
-3. In this directory, run:
-```bash
-pulumi new https://github.com/paulopacitti/pickaxe
-```
-
